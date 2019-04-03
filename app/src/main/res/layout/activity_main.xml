@@ -4,32 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ExTraining.activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <Button
             android:id="@+id/bt_linearLayout"
-            android:text="LinearLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/linearLayout" />
+
         <Button
             android:id="@+id/bt_tableLayout"
-            android:text="TableLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/tableLayout" />
+
         <Button
             android:id="@+id/bt_relativeLayout"
-            android:text="RelativeLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/relativeLayout" />
+
         <Button
             android:id="@+id/bt_exUI1"
-            android:text="Bai Tap UI"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/btUI" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

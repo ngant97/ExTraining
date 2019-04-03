@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="hihi">HIHI</string>
+    <string name="red">Red</string>
+    <string name="notRed">Not Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="notYellow">Not Yellow</string>
+    <string name="blue">Blue</string>
+    <string name="notBlue">Not Blue</string>
+    <string name="thatNgoc">THẬT NGỐC</string>
+    <string name="linearLayout">LinearLayout</string>
+    <string name="tableLayout">TableLayout</string>
+    <string name="relativeLayout">RelativeLayout</string>
+    <string name="btUI">Bai Tap UI</string>
+    <string name="white">White</string>
+    <string name="setColor">Set Color</string>
+    <string name="clear">Clear</string>
+    <string name="button5">Button 5</string>
+    <string name="button3">Button 3</string>
+    <string name="button4">Button 4</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="color1">Color1</string>
+    <string name="color2">Color2</string>
+    <string name="color3">Color3</string>
 </resources>

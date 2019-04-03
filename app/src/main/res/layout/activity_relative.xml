@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RelativeActivity">
+    tools:context=".ExTraining.activity.RelativeActivity">
+
     <Button
         android:id="@+id/bt_5"
-        android:text="Button 5"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent ="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </Button>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/button5"></Button>
 
     <Button
         android:id="@+id/bt_3"
@@ -20,38 +20,37 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_5"
         android:layout_alignLeft="@+id/bt_5"
-        android:layout_marginLeft="-50dp"
-        android:layout_marginBottom="20dp"
-        android:text="Button 3">
-    </Button>
+        android:layout_marginLeft="@dimen/marginLeftNegative50"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:text="@string/button3"></Button>
+
     <Button
         android:id="@+id/bt_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_5"
         android:layout_alignLeft="@+id/bt_5"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="20dp"
-        android:text="Button 4">
-    </Button>
+        android:layout_marginLeft="@dimen/marginLeft50"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:text="@string/button4"></Button>
+
     <Button
         android:id="@+id/bt_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_3"
         android:layout_alignLeft="@+id/bt_3"
-        android:layout_marginLeft="-50dp"
-        android:layout_marginBottom="20dp"
-        android:text="Button 1">
-    </Button>
+        android:layout_marginLeft="@dimen/marginLeftNegative50"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:text="@string/button1"></Button>
+
     <Button
         android:id="@+id/bt_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_4"
         android:layout_alignLeft="@+id/bt_4"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="20dp"
-        android:text="Button 2">
-    </Button>
+        android:layout_marginLeft="@dimen/marginLeft50"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:text="@string/button2"></Button>
 </RelativeLayout>

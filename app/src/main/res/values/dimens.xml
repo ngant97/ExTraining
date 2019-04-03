@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">24dp</dimen>
+    <dimen name="textSize16">16dp</dimen>
+    <dimen name="marginBottom">20dp</dimen>
+    <dimen name="marginLeft50">50dp</dimen>
+    <dimen name="marginLeftNegative50">-50dp</dimen>
+    <dimen name="height50">50dp</dimen>
+</resources>

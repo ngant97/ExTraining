@@ -1,8 +1,10 @@
-package com.example.myapplication;
+package com.example.myapplication.ExTraining.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.example.myapplication.R;
 
 public class TableActivity extends AppCompatActivity {
 

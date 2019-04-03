@@ -1,7 +1,9 @@
-package com.example.myapplication;
+package com.example.myapplication.ExTraining.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.myapplication.R;
 
 public class RelativeActivity extends AppCompatActivity {
 
