@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#000000"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center">
+
+                 <RadioButton
+                     android:id="@+id/rb_red"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="#ffffff"
+                     android:text="Red"
+                     android:textColor="#ffffff"
+                     android:textSize="16dp" />
+
+                 <RadioButton
+                     android:id="@+id/rb_white"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="#ffffff"
+                     android:text="White"
+                     android:textColor="#FFFFFF"
+                     android:textSize="16dp" />
+
+                 <RadioButton
+                     android:id="@+id/rb_blue"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:buttonTint="#ffffff"
+                     android:text="Blue"
+                     android:textColor="#FFFFFF"
+                     android:textSize="16dp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="right">
+                 <Button
+                     android:id="@+id/bt_setColor"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Set Color" />
+                 <Button
+                     android:id="@+id/bt_clear"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Clear" />
+             </LinearLayout>
+         </LinearLayout>
+         <TextView
+             android:id="@+id/tv_text"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="HI"
+             android:textColor="#000000"
+             android:textSize="20dp" />
+
+     </LinearLayout>
+
+ </LinearLayout>
+</android.support.constraint.ConstraintLayout>
