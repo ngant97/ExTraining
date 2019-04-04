@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,19 +15,19 @@
             android:id="@+id/bt_linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/linearRelativeLayout" />
-
-        <Button
-            android:id="@+id/bt_tableLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tableLayout" />
+            android:text="@string/linearRelativeTableLayout" />
 
         <Button
             android:id="@+id/bt_exUI1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btUI" />
+
+        <Button
+            android:id="@+id/bt_rotationsAndResetApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotations_and_app_restarts" />
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

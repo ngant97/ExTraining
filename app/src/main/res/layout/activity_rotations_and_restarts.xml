@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_layoutrotation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExTraining.activity.RotationsAndRestartsActivity">
+    <fragment
+        android:id="@+id/fragment_one"
+        class="com.example.myapplication.ExTraining.activity.fragment.RotationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <fragment
+        android:id="@+id/fragment_two"
+        class="com.example.myapplication.ExTraining.activity.fragment.TextFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textSize"
+        android:layout_weight="1" />
+</RelativeLayout>

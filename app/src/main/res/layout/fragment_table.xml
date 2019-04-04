@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     android:stretchColumns="3"
-    tools:context=".ExTraining.activity.TableActivity">
+    tools:context=".ExTraining.activity.fragment.TableFragment">
 
     <TableRow>
 
@@ -51,4 +50,5 @@
             android:gravity="center"
             android:text="@string/clear"></TextView>
     </TableRow>
+
 </TableLayout>

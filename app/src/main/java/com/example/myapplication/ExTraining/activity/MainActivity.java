@@ -2,9 +2,6 @@ package com.example.myapplication.ExTraining.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,9 +9,17 @@ import android.widget.Button;
 
 import com.example.myapplication.R;
 
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btLinearLayout, btTableLayout, btRelativeLayout, btExUi1;
+    private Button btLinearLayout;
+    private Button btTableLayout;
+    private Button btRelativeLayout;
+    private Button btExUi1;
+    private Button btRotations;
     private static final String TAG = "MainActivity";
     private FragmentManager fm;
 
@@ -29,14 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         btLinearLayout = findViewById(R.id.bt_linearLayout);
-        btTableLayout = findViewById(R.id.bt_tableLayout);
-        btRelativeLayout = findViewById(R.id.bt_relativeLayout);
         btExUi1 = findViewById(R.id.bt_exUI1);
+        btRotations = findViewById(R.id.bt_rotationsAndResetApp);
 
         btLinearLayout.setOnClickListener(this);
-        btTableLayout.setOnClickListener(this);
-        btRelativeLayout.setOnClickListener(this);
         btExUi1.setOnClickListener(this);
+        btRotations.setOnClickListener(this);
     }
 
     private void initData() {
@@ -52,14 +55,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentLinear = new Intent(this, Main2Activity.class);
                 startActivity(intentLinear);
                 break;
-            case R.id.bt_tableLayout:
-                Intent intentTable = new Intent(this, TableActivity.class);
-                startActivity(intentTable);
-                break;
             case R.id.bt_exUI1:
                 Intent intentexUI = new Intent(this, ExUiActivity.class);
                 startActivity(intentexUI);
                 break;
+            case R.id.bt_rotationsAndResetApp:
+                Intent intentRotations = new Intent(this, RotationsAndRestartsActivity.class);
+                startActivity(intentRotations);
+                break;
+
         }
     }
 }

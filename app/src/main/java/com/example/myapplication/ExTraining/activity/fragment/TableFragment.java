@@ -8,12 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class RelativeFragment extends Fragment {
+public class TableFragment extends Fragment {
 
 
-    public RelativeFragment() {
+    public TableFragment() {
         // Required empty public constructor
     }
 
@@ -21,13 +23,10 @@ public class RelativeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_relative, container, false);
-        initUI(view);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_table, container, false);
         return view;
     }
 
-    private void initUI(View view) {
-
-    }
 
 }

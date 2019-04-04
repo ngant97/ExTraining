@@ -16,9 +16,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8  // <= add this
+        targetCompatibility JavaVersion.VERSION_1_8  // <= add this
+    }
 }
 
 dependencies {
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'

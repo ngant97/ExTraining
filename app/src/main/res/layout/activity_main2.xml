@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ExTraining.activity.Main2Activity">
-    <fragment class="com.example.myapplication.ExTraining.activity.fragment.LinearFragment"
-        android:id="@+id/fragment_one"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="300dp" />
 
-    <fragment class="com.example.myapplication.ExTraining.activity.fragment.RelativeFragment"
-        android:id="@+id/fragment_two"
-        android:layout_weight="2"
+    <fragment
+        android:id="@+id/fragment_one"
+        class="com.example.myapplication.ExTraining.activity.fragment.LinearFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="150dp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_three"
+        class="com.example.myapplication.ExTraining.activity.fragment.TableFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fragment_one"
+        android:layout_weight="2" />
+
+    <fragment
+        android:id="@+id/fragment_two"
+        class="com.example.myapplication.ExTraining.activity.fragment.RelativeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_three"
+        android:layout_weight="3" />
+</RelativeLayout>
