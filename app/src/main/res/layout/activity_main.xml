@@ -15,19 +15,13 @@
             android:id="@+id/bt_linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/linearLayout" />
+            android:text="@string/linearRelativeLayout" />
 
         <Button
             android:id="@+id/bt_tableLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tableLayout" />
-
-        <Button
-            android:id="@+id/bt_relativeLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/relativeLayout" />
 
         <Button
             android:id="@+id/bt_exUI1"

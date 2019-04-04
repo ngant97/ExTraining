@@ -2,6 +2,8 @@ package com.example.myapplication.ExTraining.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btLinearLayout, btTableLayout, btRelativeLayout, btExUi1;
     private static final String TAG = "MainActivity";
+    private FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,16 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //set TH Button click
         switch (view.getId()) {
             case R.id.bt_linearLayout:
-                Intent intent = new Intent(this, Main2Activity.class);
-                startActivity(intent);
+                Intent intentLinear = new Intent(this, Main2Activity.class);
+                startActivity(intentLinear);
                 break;
             case R.id.bt_tableLayout:
                 Intent intentTable = new Intent(this, TableActivity.class);
                 startActivity(intentTable);
-                break;
-            case R.id.bt_relativeLayout:
-                Intent intentRelative = new Intent(this, RelativeActivity.class);
-                startActivity(intentRelative);
                 break;
             case R.id.bt_exUI1:
                 Intent intentexUI = new Intent(this, ExUiActivity.class);

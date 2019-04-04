@@ -8,7 +8,7 @@
     <string name="blue">Blue</string>
     <string name="notBlue">Not Blue</string>
     <string name="thatNgoc">THẬT NGỐC</string>
-    <string name="linearLayout">LinearLayout</string>
+    <string name="linearRelativeLayout">LinearLayout - RelativeLayout</string>
     <string name="tableLayout">TableLayout</string>
     <string name="relativeLayout">RelativeLayout</string>
     <string name="btUI">Bai Tap UI</string>
@@ -23,4 +23,7 @@
     <string name="color1">Color1</string>
     <string name="color2">Color2</string>
     <string name="color3">Color3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
