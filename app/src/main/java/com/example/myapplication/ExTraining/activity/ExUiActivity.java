@@ -25,6 +25,10 @@ public class ExUiActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ex_ui);
 
+        initView();
+    }
+
+    private void initView() {
         imgbtnRed = findViewById(R.id.imgbtn_red);
         imgbtnBlue = findViewById(R.id.imgbtn_blue);
         tvText = findViewById(R.id.tv_text);
@@ -40,6 +44,10 @@ public class ExUiActivity extends AppCompatActivity implements View.OnClickListe
         tgbtnBlue.setOnClickListener(this);
     }
 
+    private void initData() {
+
+    }
+
     private void setCheckFalseToggleButton(ToggleButton tgbtn1, ToggleButton tgbtn2) {
         tgbtn1.setChecked(false);
         tgbtn2.setChecked(false);
@@ -48,11 +56,9 @@ public class ExUiActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        ToggleButton toggleButton = (ToggleButton) view;
-        ImageButton imageButton = (ImageButton) view;
+        switch (view.getId()) {
 
-        //set TH click ToggleButton
-        switch (toggleButton.getId()) {
+            //Set TH ToggleButton click
             case R.id.tgbtn_red:
                 if (tgbtnRed.getText().equals("Red")) {
                     setCheckFalseToggleButton(tgbtnYellow, tgbtnBlue);
@@ -80,12 +86,8 @@ public class ExUiActivity extends AppCompatActivity implements View.OnClickListe
                     tvText1.setTextColor(Color.BLACK);
                 }
                 break;
-            default:
-                tvText1.setTextColor(Color.BLACK);
-        }
 
-        //set TH click ImageButton
-        switch (imageButton.getId()) {
+            //Set TH ImageButton click
             case R.id.imgbtn_red:
                 tvText.setTextColor(Color.RED);
                 break;

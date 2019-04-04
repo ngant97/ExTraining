@@ -13,12 +13,18 @@ import com.example.myapplication.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btLinearLayout, btTableLayout, btRelativeLayout, btExUi1;
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initView();
+
+    }
+
+    private void initView() {
         btLinearLayout = findViewById(R.id.bt_linearLayout);
         btTableLayout = findViewById(R.id.bt_tableLayout);
         btRelativeLayout = findViewById(R.id.bt_relativeLayout);
@@ -30,12 +36,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btExUi1.setOnClickListener(this);
     }
 
+    private void initData() {
+
+    }
+
     @Override
     public void onClick(View view) {
 
-        Button button = (Button) view;
-
-        switch (button.getId()) {
+        //set TH Button click
+        switch (view.getId()) {
             case R.id.bt_linearLayout:
                 Intent intent = new Intent(this, Main2Activity.class);
                 startActivity(intent);

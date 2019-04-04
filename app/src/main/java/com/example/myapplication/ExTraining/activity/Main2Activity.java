@@ -31,6 +31,11 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        initView();
+
+    }
+
+    private void initView() {
         btSetColor = findViewById(R.id.bt_setColor);
         btClear = findViewById(R.id.bt_clear);
         rbRed = findViewById(R.id.rb_red);
@@ -45,8 +50,8 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         rbBlue.setOnClickListener(this);
     }
 
-    private void setTextColor(String color) {
-        tvText.setTextColor(Color.parseColor(color));
+    private void initData() {
+
     }
 
     private void setCheckFalseRb(RadioButton rb1, RadioButton rb2) {
@@ -56,30 +61,25 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-
-        Button button = (Button) view;
-        RadioButton radioButton = (RadioButton) view;
-        //TH Click vào button
-        switch (button.getId()) {
-
+        Log.d(TAG, "onClick: ");
+        switch (view.getId()) {
+            //Set TH button Click
             case R.id.bt_setColor:
                 if (rbRed.isChecked()) {
-                    setTextColor("#C50023");
+                    tvText.setTextColor(getResources().getColor(R.color.doSam));
                 }
                 if (rbWhite.isChecked()) {
-                    setTextColor("#FFFFFF");
+                    tvText.setTextColor(getResources().getColor(R.color.white));
                 }
                 if (rbBlue.isChecked()) {
-                    setTextColor("#205AA7");
+                    tvText.setTextColor(getResources().getColor(R.color.xanhDuong));
                 }
                 break;
             case R.id.bt_clear:
-                setTextColor("#000000");
+                tvText.setTextColor(getResources().getColor(R.color.black));
                 break;
-        }
 
-        //TH click vào RadioButton
-        switch (radioButton.getId()) {
+            //Set TH Radiobutton Click
             case R.id.rb_red:
                 setCheckFalseRb(rbWhite, rbBlue);
                 break;
@@ -90,5 +90,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 setCheckFalseRb(rbRed, rbBlue);
                 break;
         }
+
     }
 }
