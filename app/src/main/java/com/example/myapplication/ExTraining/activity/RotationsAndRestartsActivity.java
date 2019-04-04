@@ -18,7 +18,7 @@ import androidx.annotation.Nullable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RotationsAndRestartsActivity extends BaseActivity {
+public class RotationsAndRestartsActivity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.et_message)
     EditText etMessage;
@@ -30,15 +30,12 @@ public class RotationsAndRestartsActivity extends BaseActivity {
     TextView tvMessage;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rotations_and_restarts);
-
-        initView();
-
+    public int getLayoutId() {
+        return R.layout.activity_rotations_and_restarts;
     }
 
-    private void initView() {
+    @Override
+    public void initView() {
         ButterKnife.bind(this);
 
         btAddMessage.setOnClickListener(this);

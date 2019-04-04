@@ -8,13 +8,19 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class BaseActivity  extends AppCompatActivity implements View.OnClickListener {
+public abstract class BaseActivity  extends AppCompatActivity {
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(getLayoutId());
+
+        initView();
     }
 
+    public abstract int getLayoutId();
+
+    public abstract void initView();
 
     //Hàm show thông báo toast
     public void showToast(String msg) {
