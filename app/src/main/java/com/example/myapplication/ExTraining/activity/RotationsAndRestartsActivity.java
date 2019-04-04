@@ -46,7 +46,7 @@ public class RotationsAndRestartsActivity extends BaseActivity {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.bt_addMessage:
                 tvMessage.setText(etMessage.getText());
                 break;
@@ -56,7 +56,7 @@ public class RotationsAndRestartsActivity extends BaseActivity {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putSerializable("textMessege",tvMessage.getText().toString());
+        outState.putSerializable("textMessege", tvMessage.getText().toString());
     }
 
     @Override
