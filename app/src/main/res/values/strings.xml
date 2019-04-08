@@ -28,4 +28,5 @@
     <string name="add_message">Add Message</string>
     <string name="play_song">Play song</string>
     <string name="stop_song">Stop Song</string>
+    <string name="notification">Notification</string>
 </resources>
