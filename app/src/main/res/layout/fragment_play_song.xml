@@ -7,23 +7,28 @@
     tools:context=".ExTraining.activity.fragment.PlaySongFragment">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/bt_play_song"
-        android:text="@string/play_song">
-    </Button>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bt_stop_song"
-        android:text="@string/stop_song">
-    </Button>
+        android:text="@string/play_song"></Button>
 
     <Button
+        android:id="@+id/bt_stop_song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/stop_song"></Button>
+
+    <Button
         android:id="@+id/bt_Notification"
-        android:text="@string/notification">
-    </Button>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"></Button>
+
+    <fragment
+        android:id="@+id/fragment_work"
+        class="com.example.myapplication.ExTraining.activity.fragment.AddWorkFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
 
 </LinearLayout>

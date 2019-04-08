@@ -29,4 +29,8 @@
     <string name="play_song">Play song</string>
     <string name="stop_song">Stop Song</string>
     <string name="notification">Notification</string>
+    <string name="ten_cong_viec">Tên công việc</string>
+    <string name="thoi_gian">Thời gian</string>
+    <string name="add_work">Add Work</string>
+    <string name="danh_sach_cong_viec">Danh sách công việc</string>
 </resources>

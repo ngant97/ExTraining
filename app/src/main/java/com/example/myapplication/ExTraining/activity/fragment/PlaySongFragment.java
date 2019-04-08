@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -38,19 +40,14 @@ public class PlaySongFragment extends BaseFragment implements View.OnClickListen
     @BindView(R.id.bt_Notification)
     Button btNotifi;
 
+    FragmentManager fm = getFragmentManager();
+
     private NotificationCompat.Builder notBuilder;
     private static final int MY_NOTIFICATION_ID = 12345;
     private static final int MY_REQUEST_CODE = 100;
 
     public PlaySongFragment() {
         // Required empty public constructor
-    }
-
-
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     @Override
@@ -70,6 +67,7 @@ public class PlaySongFragment extends BaseFragment implements View.OnClickListen
         btPlaySong.setOnClickListener(this);
         btStopSong.setOnClickListener(this);
         btNotifi.setOnClickListener(this);
+
     }
 
     @Override
