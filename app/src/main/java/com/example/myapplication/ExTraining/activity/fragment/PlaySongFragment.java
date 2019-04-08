@@ -95,37 +95,20 @@ public class PlaySongFragment extends BaseFragment implements View.OnClickListen
     }
 
     public void notiButtonClicked(View view) {
-
-        // --------------------------
-        // Chuẩn bị một thông báo
-        // --------------------------
-
         this.notBuilder.setSmallIcon(R.mipmap.ic_launcher);
         this.notBuilder.setTicker("This is a ticker");
-
-        // Sét đặt thời điểm sự kiện xẩy ra.
-        // Các thông báo trên Panel được sắp xếp bởi thời gian này.
         this.notBuilder.setWhen(System.currentTimeMillis() + 10 * 1000);
         this.notBuilder.setContentTitle("This is title");
         this.notBuilder.setContentText("This is content text ....");
 
-        // Tạo một Intent
         Intent intent = new Intent(getActivity(), MainActivity.class);
 
-
-        // PendingIntent.getActivity(..) sẽ start mới một Activity và trả về
-        // đối tượng PendingIntent.
-        // Nó cũng tương đương với gọi Context.startActivity(Intent).
         PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(), MY_REQUEST_CODE, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
 
         this.notBuilder.setContentIntent(pendingIntent);
 
-        // Lấy ra dịch vụ thông báo (Một dịch vụ có sẵn của hệ thống).
         NotificationManager notificationService =
                 (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
-
-        // Xây dựng thông báo và gửi nó lên hệ thống.
 
         Notification notification = notBuilder.build();
         notificationService.notify(MY_NOTIFICATION_ID, notification);
