@@ -32,6 +32,11 @@ public class RotationFragment extends BaseFragment {
         return view;
     }
 
+    @Override
+    public int getLayoutId() {
+        return R.layout.fragment_rotation;
+    }
+
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
@@ -47,6 +52,11 @@ public class RotationFragment extends BaseFragment {
 
     @Override
     public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
 
     }
 }

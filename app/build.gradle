@@ -20,9 +20,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8  // <= add this
         targetCompatibility JavaVersion.VERSION_1_8  // <= add this
     }
-
+    dataBinding {
+        enabled = true
+    }
 
 }
+
 
 dependencies {
     implementation 'com.google.guava:guava:27.0.1-android'

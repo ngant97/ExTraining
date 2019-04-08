@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExTraining.activity.RotationsAndRestartsActivity"></activity>
+        <service
+            android:name=".ExTraining.service.PlaySongService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ExTraining.activity.RotationsAndRestartsActivity" />
         <activity android:name=".ExTraining.activity.Main2Activity" />
         <activity android:name=".ExTraining.activity.ExUiActivity" />
         <activity android:name=".ExTraining.activity.MainActivity">

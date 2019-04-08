@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentRotations = new Intent(this, RotationsAndRestartsActivity.class);
                 startActivity(intentRotations);
                 break;
-
         }
     }
 }

@@ -11,6 +11,7 @@ import com.example.myapplication.R;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import butterknife.ButterKnife;
 
 public class TableFragment extends Fragment {
 
