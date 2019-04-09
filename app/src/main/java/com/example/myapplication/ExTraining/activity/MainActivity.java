@@ -7,11 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myapplication.ExTraining.activity.fragment.NetWorkingFragment;
+import com.example.myapplication.ExTraining.activity.fragment.WorkFragment;
 import com.example.myapplication.R;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initView();
 
     }
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btLinearLayout = findViewById(R.id.bt_linearLayout);
         btExUi1 = findViewById(R.id.bt_exUI1);
         btRotations = findViewById(R.id.bt_rotationsAndResetApp);
+
+        FragmentManager fm= getSupportFragmentManager();
+        FragmentTransaction ft_add = fm.beginTransaction();
+        ft_add.add(R.id.fm_main_net_working, new NetWorkingFragment());
+        ft_add.commit();
 
         btLinearLayout.setOnClickListener(this);
         btExUi1.setOnClickListener(this);

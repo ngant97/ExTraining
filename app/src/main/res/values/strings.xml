@@ -33,4 +33,5 @@
     <string name="thoi_gian">Thời gian</string>
     <string name="add_work">Add Work</string>
     <string name="danh_sach_cong_viec">Danh sách công việc</string>
+    <string name="number_of_line_in_page">Number of line in page</string>
 </resources>

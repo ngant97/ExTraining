@@ -25,12 +25,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rotations_and_app_restarts" />
-        <fragment
-            android:id="@+id/fragment_main"
-            class="com.example.myapplication.ExTraining.activity.fragment.PlaySongFragment"
-            android:layout_weight="1"
+
+        <!--<fragment-->
+            <!--android:id="@+id/fragment_main"-->
+            <!--class="com.example.myapplication.ExTraining.activity.fragment.PlaySongFragment"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</fragment>-->
+        <FrameLayout
+            android:id="@+id/fm_main_net_working"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </fragment>
+        </FrameLayout>
 
 </LinearLayout>

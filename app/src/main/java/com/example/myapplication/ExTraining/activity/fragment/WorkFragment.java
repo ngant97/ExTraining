@@ -72,14 +72,6 @@ public class WorkFragment extends BaseFragment implements View.OnClickListener, 
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.d(TAG, "onItemClick: click vào rồi nè");
-        switch (view.getId()) {
-            case R.id.lv_work:
-//                FragmentManager fm = getFragmentManager();
-//                FragmentTransaction ft_rep = fm.beginTransaction();
-//                ft_rep.replace(R.id.fm_main, new AddWorkFragment());
-//                ft_rep.commit();
-                break;
-        }
+
     }
 }
