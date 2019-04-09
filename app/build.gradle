@@ -31,6 +31,7 @@ android {
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
     implementation 'com.google.guava:guava:27.0.1-android'
     implementation 'com.jakewharton:butterknife:10.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'

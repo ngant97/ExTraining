@@ -87,6 +87,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return words;
     }
+
     //Insert Data
     public boolean insertWork(Work work) {
         SQLiteDatabase db = getWritableDatabase();
