@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myapplication.ExTraining.activity.fragment.ColorFragment;
 import com.example.myapplication.ExTraining.activity.fragment.LoanFragment;
 import com.example.myapplication.ExTraining.activity.fragment.NetWorkingFragment;
 import com.example.myapplication.ExTraining.activity.fragment.WorkFragment;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft_add = fm.beginTransaction();
-        ft_add.add(R.id.fm_main_net_working, new LoanFragment());
+        ft_add.add(R.id.fm_main_net_working, new ColorFragment());
         ft_add.commit();
 
         btLinearLayout.setOnClickListener(this);

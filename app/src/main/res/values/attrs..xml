@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorView">
+        <attr name="cv_main_color" format="color" />
+        <attr name="cv_color_press" format="color" />
+
+    </declare-styleable>
+</resources>
