@@ -3,102 +3,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExTraining.activity.fragment.LoanFragment"
-    >
+    tools:context=".ExTraining.activity.fragment.LoanFragment">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <TextView
-            android:textSize="@dimen/textSize"
-            android:text=""
-            android:id="@+id/tv_tv_monthly_payment"
+            android:id="@+id/tv_monthly_payment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-        </TextView>
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textSize"></TextView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1.0">
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <TextView
-                        android:text="@string/amount"
                         android:id="@+id/tv_amount1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"></TextView>
+
                     <EditText
                         android:id="@+id/et_amount1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:text="@string/amount_200000" />
+
                     <TextView
-                        android:text="@string/rate"
                         android:id="@+id/tv_rate1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate"></TextView>
+
                     <EditText
                         android:id="@+id/et_rate1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:inputType="numberDecimal"
+                        android:text="@string/rate_6_5" />
+
                     <TextView
-                        android:text="@string/months"
                         android:id="@+id/tv_months1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/months"></TextView>
+
                     <EditText
                         android:id="@+id/et_months1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:text="@string/month_180" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <TextView
-                        android:text="@string/amount"
                         android:id="@+id/tv_amount2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"></TextView>
+
                     <EditText
+                        android:editable="false"
+                        android:text="@string/amount_200000"
                         android:id="@+id/et_amount2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
+
                     <TextView
-                        android:text="@string/rate"
                         android:id="@+id/tv_rate2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate"></TextView>
+
                     <EditText
+                        android:editable="false"
+                        android:inputType="numberDecimal"
+                        android:text="@string/rate_8"
                         android:id="@+id/et_rate2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
+
                     <TextView
-                        android:text="@string/months"
                         android:id="@+id/tv_months2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TextView>
+                        android:layout_height="wrap_content"
+                        android:text="@string/months"></TextView>
+
                     <EditText
+                        android:editable="false"
+                        android:text="@string/months_120"
                         android:id="@+id/et_months2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load"></Button>
+        <TextView
+            android:id="@+id/tv_ket_qua_tinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 

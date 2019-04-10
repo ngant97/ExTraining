@@ -37,4 +37,9 @@
     <string name="amount">Amount</string>
     <string name="rate">Rate</string>
     <string name="months">Months</string>
+    <string name="amount_200000">200000</string>
+    <string name="rate_6_5">6.5</string>
+    <string name="month_180">180</string>
+    <string name="rate_8">8</string>
+    <string name="months_120">120</string>
 </resources>
