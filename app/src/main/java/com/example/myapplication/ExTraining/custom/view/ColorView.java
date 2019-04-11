@@ -20,7 +20,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import static com.example.myapplication.ExTraining.activity.fragment.WorkFragment.TAG;
 
-public class ColorView extends View implements ColorInterface {
+public class ColorView extends View implements ColorInterface, View.OnClickListener {
 
     private String DEFAULT_MAIN_COLOR = "#FF3333";
     private String DEFAULT_PRESS_COLOR = "#6699FF";
@@ -36,12 +36,7 @@ public class ColorView extends View implements ColorInterface {
             pressColor = DEFAULT_PRESS_COLOR;
         }
         setBackgroundColor(mainColor);
-        this.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setBackgroundColor(pressColor);
-            }
-        });
+        this.setOnClickListener(this);
     }
 
     private void setBackgroundColor(String mainColor) {
@@ -87,4 +82,9 @@ public class ColorView extends View implements ColorInterface {
     }
 
 
+    @Override
+    public void onClick(View v) {
+        Log.d(TAG, "onClick: ");
+        setBackgroundColor(pressColor);
+    }
 }
